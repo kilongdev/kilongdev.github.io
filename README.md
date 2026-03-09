@@ -51,10 +51,9 @@ Before deploying, update the following files with your information:
 
 ### Step 2: Create GitHub Repository
 
-1. Create a **new repository** on GitHub
-2. **Important**: Name it exactly `nguyenkimlong2104.github.io`
-   - This special naming convention makes GitHub Pages serve it as your personal site
-3. The repository name is now fixed, so `base: '/'` in `vite.config.js` is already configured
+1. Create a **new repository** on GitHub (or use your existing one)
+2. To publish at the root URL, repository name must be exactly `kilongdev.github.io`
+3. Use `base: '/'` in `vite.config.js` (already configured)
 
 ### Step 3: Push Your Code
 
@@ -63,7 +62,7 @@ git init
 git add .
 git commit -m "Initial commit: Portfolio website"
 git branch -M main
-git remote add origin https://github.com/nguyenkimlong2104/nguyenkimlong2104.github.io.git
+git remote add origin https://github.com/kilongdev/kilongdev.github.io.git
 git push -u origin main
 ```
 
@@ -78,7 +77,7 @@ git push -u origin main
 
 After deployment completes (usually 2-3 minutes), your site will be available at:
 ```
-https://nguyenkimlong2104.github.io/
+https://kilongdev.github.io/
 ```
 
 ## 📝 Customization Guide
