@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on March 9th, 2026
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Nguyen Kim Long} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/kilongdev}{\underline{github.com/kilongdev}} $  $
+    \faIcon{code}
+    \href{https://kilongdev.github.io}
+    {\underline{kilongdev.github.io}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/kilongdev}{\underline{linkedin.com/in/kilongdev}} $  $
+    \faIcon{envelope}
+    \href{mailto:longnguyen210405@gmail.com}
+    {\underline{longnguyen210405@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Saigon University}{2005 -- Present}
+      {Student - Computer Science}{}
+
+    \vspace{-10pt}
+
+    \subsection{Focus Areas}
+      \textbf{Specialties:} Frontend Development, React, TypeScript, Tailwind CSS \\
+      \textbf{Current Focus:} Building pixel-perfect UIs, Design Systems, Web3 \& Three.js
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: JavaScript, TypeScript, HTML/CSS, Java} \\
+     
+     \textbf{Frameworks \& Libraries}{: React, Next.js, Tailwind CSS, Redux Toolkit, Node.js, Jest} \\
+     
+     \textbf{Tools}{: Git/GitHub, Vite, Webpack, VS Code, npm}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{SSB-Tracking} $|$ \footnotesize\emph{React, JavaScript, Tailwind CSS, Git}}{2024}
+        \resumeItemListStart
+            \resumeItem{Developed a student bus management web application for pickup and drop-off tracking}
+            \resumeItem{Implemented clean UI with practical real-world workflows for school administrators}
+            \resumeItem{Built responsive interface using React and Tailwind CSS for mobile and desktop}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{BaSan\_TMDT} $|$ \footnotesize\emph{Next.js, Redux, Chart.js, Git}}{2024}
+        \resumeItemListStart
+            \resumeItem{Created an e-commerce dashboard with analytics-focused screens and data management flows}
+            \resumeItem{Integrated Chart.js for visualization of sales and inventory metrics}
+            \resumeItem{Implemented state management with Redux for complex data flows}
+            \resumeItem{Built reusable UI components following design system principles}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+        {\textbf{Portfolio Website} $|$ \footnotesize\emph{React, Vite, GitHub Pages}}{2026}
+        \resumeItemListStart
+            \resumeItem{Designed and developed personal portfolio with GitHub-style layout using React}
+            \resumeItem{Implemented responsive design with clean, light interface for optimal user experience}
+            \resumeItem{Deployed to GitHub Pages with automated CI/CD pipeline using GitHub Actions}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Professional Summary}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Frontend Developer}\vspace{8pt}}{2023 -- Present}
+          {\small{Focused on crafting beautiful, responsive, and user-friendly web experiences with React and TypeScript}}
+
+          \resumeProjectHeading
+          {\textbf{Current Activities}\vspace{8pt}}{}
+          \small{Building scalable React applications, exploring design systems and component architecture}
+
+        \subsection{Learning \& Development}
+          
+          \resumeProjectHeading
+          {\textbf{Continuous Learning}\vspace{8pt}}{}
+          {\small{Advanced TypeScript patterns, Web3 \& dApps, Three.js for 3D web experiences}}
+
+          \resumeProjectHeading
+          {\textbf{Goals}\vspace{8pt}}{}
+          {\small{Contributing to open source projects, mastering design systems, building production-ready applications}}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}

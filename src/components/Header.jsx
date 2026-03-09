@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FaGithub, FaEnvelope, FaFilePdf } from 'react-icons/fa'
 
 function Header() {
   return (
@@ -14,6 +14,14 @@ function Header() {
           className="btn btn-primary"
         >
           <FaGithub /> GitHub Profile
+        </a>
+        <a 
+          href="/resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="btn btn-secondary"
+        >
+          <FaFilePdf /> View Resume
         </a>
         <a href="#contact" className="btn btn-secondary">
           <FaEnvelope /> Get In Touch

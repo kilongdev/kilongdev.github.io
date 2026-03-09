@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaFacebook, FaGithub, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaEnvelope, FaFacebook, FaLinkedin, FaMapMarkerAlt, FaUniversity, FaFilePdf } from 'react-icons/fa'
 
 function ProfileSidebar() {
   return (
@@ -14,12 +14,17 @@ function ProfileSidebar() {
 
       <div className="profile-meta">
         <p><FaMapMarkerAlt /> Vietnam</p>
+        <p><FaUniversity /> Saigon University - Student</p>
+        <p>Enrollment Year: 2005</p>
         <p><FaEnvelope /> longnguyen210405@gmail.com</p>
       </div>
 
       <div className="profile-actions">
-        <a href="https://github.com/kilongdev" target="_blank" rel="noopener noreferrer">
-          <FaGithub /> GitHub
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <FaFilePdf /> View Resume (PDF)
+        </a>
+        <a href="https://www.linkedin.com/in/kilongdev" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin /> LinkedIn
         </a>
         <a href="https://www.facebook.com/kiLongdev" target="_blank" rel="noopener noreferrer">
           <FaFacebook /> Facebook

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaEnvelope, FaFacebook } from 'react-icons/fa'
+import { FaEnvelope, FaFacebook, FaLinkedin } from 'react-icons/fa'
 
 function Contact() {
   return (
@@ -12,20 +12,20 @@ function Contact() {
         </p>
         <div className="contact-links">
           <a 
-            href="https://github.com/kilongdev" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="contact-link"
-          >
-            <FaGithub className="contact-icon" />
-            <span>GitHub</span>
-          </a>
-          <a 
             href="mailto:longnguyen210405@gmail.com" 
             className="contact-link"
           >
             <FaEnvelope className="contact-icon" />
             <span>Email</span>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/kilongdev" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            <FaLinkedin className="contact-icon" />
+            <span>LinkedIn</span>
           </a>
           <a 
             href="https://www.facebook.com/kiLongdev" 
