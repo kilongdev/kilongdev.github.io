@@ -4,25 +4,25 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 function Projects() {
   const projects = [
     {
+      title: 'SSB-Tracking',
+      description: 'A student bus management web app for pickup and drop-off tracking with a clean UI and practical real-world workflows.',
+      tags: ['React', 'JavaScript', 'Tailwind CSS'],
+      github: 'https://github.com/kilongdev/SSB-Tracking',
+      demo: null
+    },
+    {
+      title: 'BaSan_TMDT',
+      description: 'An e-commerce dashboard featuring analytics-focused screens, data management flows, and reusable UI components.',
+      tags: ['Next.js', 'Redux', 'Chart.js'],
+      github: 'https://github.com/HoL0ngg/b-s-n-TM-T',
+      demo: null
+    },
+    {
       title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and deployed on GitHub Pages. Features clean design and smooth animations.',
-      tags: ['React', 'CSS3', 'GitHub Pages'],
+      description: 'My personal portfolio built with React, focused on clean structure, responsive layout, and smooth interactions.',
+      tags: ['React', 'Vite', 'Responsive Design'],
       github: 'https://github.com/kilongdev',
-      demo: '#'
-    },
-    {
-      title: 'Project Two',
-      description: 'Add your own project description here. Showcase your best work and technical achievements.',
-      tags: ['React', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/kilongdev',
-      demo: '#'
-    },
-    {
-      title: 'Project Three',
-      description: 'Another amazing project you\'ve built. Highlight the key features and technologies used.',
-      tags: ['JavaScript', 'API', 'CSS'],
-      github: 'https://github.com/kilongdev',
-      demo: '#'
+      demo: 'https://kilongdev.github.io/'
     },
   ]
 

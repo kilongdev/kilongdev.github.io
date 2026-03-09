@@ -4,8 +4,8 @@ import { FaGithub, FaEnvelope } from 'react-icons/fa'
 function Header() {
   return (
     <header className="header">
-      <h1>Hello, I'm Nguyen Kim Long</h1>
-      <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+      <h1>Hello, I'm Kim Long</h1>
+      <p>Frontend Developer | React & Tailwind CSS | Pixel-Perfect UI Builder</p>
       <div className="header-links">
         <a 
           href="https://github.com/kilongdev" 
