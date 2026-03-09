@@ -15,7 +15,7 @@ function ProfileSidebar() {
       <div className="profile-meta">
         <p><FaMapMarkerAlt /> Vietnam</p>
         <p><FaUniversity /> Saigon University - Student</p>
-        <p>Enrollment Year: 2005</p>
+        <p>Enrollment Year: 2022</p>
         <p><FaEnvelope /> longnguyen210405@gmail.com</p>
       </div>
 
